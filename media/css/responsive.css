@@ -1,0 +1,10 @@
+/** 
+ *	User Agent Responsive CSS Rules
+ */
+
+@media screen and (max-width: 600px) {
+	#main #content, #main aside {
+		float: none !important;
+		width: auto !important;
+	}
+}

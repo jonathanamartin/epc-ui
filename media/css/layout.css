@@ -1,0 +1,565 @@
+/** 
+ *	Layout CSS Rules
+ */
+
+#login-btn:active,
+#cart:active
+{
+	margin-top: 2px;	
+}
+
+p {
+	padding-bottom: 14px;	
+}
+
+#container {
+ 	 margin: 0px auto;
+ 	 max-width: 92.30769230769231em; /* 1200px / 13px */
+ 	 min-width: 960px;
+ 	 /*width: expression(document.body.clientWidth < 742? "740px" : document.body.clientWidth > 1202? "1200px" : "auto"); IE 6 min and max width*/
+ 	 position: relative;
+ 	 line-height: 1.4;
+}
+
+/**
+ *	Login Form
+ */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0px;
+}
+
+.ui-dialog {
+	padding: 0px 20px 20px 20px;
+}
+
+.ui-dialog-titlebar {
+	height: 20px;	
+	padding-top: 10px;
+}
+
+.ui-dialog-titlebar-close {
+	float: right;
+	display: block;
+	width: 26px;
+	height: 26px;
+	margin-right: -10px;
+}
+
+#login-form {
+	margin-top: -14px;	
+}
+
+#login-form h2 {
+	padding-bottom: 10px;
+}
+
+#login-form form {
+	float: left;
+	width: 220px;
+}
+
+#login-form .right {
+	float: right;
+	width: 220px;
+}
+
+/**
+ *	Header
+ */
+header {
+	height: 110px;	
+}
+
+#logo {
+	display: block;
+	float: left;
+	width: 180px;
+	height: 110px;	
+	margin-left: 1.04166666666667%; /* 10px / 960px */
+}
+
+header .right {
+	float: right;
+	height: 42px;
+	margin-top: 45px;
+	width: 76.04166666666667%; /* 730px / 960px */
+}
+
+#login {
+	float: right;
+	width: 58%; /* 449px / 730px */	
+	margin-right: 4.10958904109589%; /* 30px / 730px */	
+}
+
+#login h2 {
+	width: 49.31506849315068%; /* 360px / 730px */
+	float: right;
+	margin-right: 1.91780821917808%; /* 14px / 730px */
+	height: 42px;
+}
+
+#login a {
+	display: block;
+	float: right;
+	width: 82px;
+	height: 42px;
+}
+
+#login a span {
+	display: block;
+	width: 6px;
+	height: 10px;
+	float: left;	
+	margin: 16px 0px 0px 10px;
+}
+
+#cart {
+	float: right;
+	width: 34.24657534246575%; /* 250px / 730px */		
+	height: 42px;
+	margin-right: 1.36986301369863%; /* 10px / 730px */
+}
+
+#cart span {
+	display: block;
+	float: left;
+	height: 42px;
+}
+
+#cart .icon {
+	height: 14px;
+	margin-top: 14px;
+	width: 18px;
+	margin: 14px 3% 0px 3%;
+}
+
+#cart .amount {
+	width: 44%; /* 110 / 250 */	
+}
+
+#cart .items {
+	width: 40%; /* 100 / 250 */	
+}
+
+/**
+ *	Navigation
+ */
+nav.main {
+	height: 50px;
+	padding: 0 1.04166666666667%; /* 10px / 960px */
+}
+
+nav.main ul {
+	height: 48px;
+}
+
+nav.main li {
+	float: left;
+	width: 11.11111111111111%; /* 100 / number of buttons */
+}
+
+nav.main li a, nav.main li a:visited {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 43px;
+}
+
+nav.main li.active {
+	margin-top: -6px;
+	height: 54px;
+}
+
+nav.main li.active a {
+	height: 54px;
+}
+
+/**
+ *	Sub Navigation
+ */
+.subnav {
+	position: absolute;
+	z-index: 10;
+	min-width: 11.11111111111111%; /* 100 / number of buttons */
+	padding: 8px 8px 14px 8px;
+}
+
+.subnav ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.subnav ul a {
+	display: block;
+	padding: 5px 0px;	
+}
+
+/**
+ *	Bread Crumb and RSS
+ */
+#breadcrumb-and-rss {
+	padding: 0 1.04166666666667%; /* 10px / 960px */
+	height: 46px;
+	margin: 5px 1.04166666666667%; /* 10px / 960px */
+}
+
+#breadcrumb-and-rss #rss-icon {
+	display: block;
+	width: 42px;
+	height: 36px;
+	float: right;
+	margin-top: 8px;
+}
+
+#breadcrumb-and-rss ul {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#breadcrumb-and-rss li {
+	display: inline;
+}
+
+/**
+ *	Main
+ */
+#main {
+	padding: 0 1.04166666666667%; /* 10px / 960px */
+}
+
+body#home #content {
+	float: left;
+}
+
+body#search #content {
+	float: right;
+}
+
+#content {
+	width: 70.8333333%; /* 680px / 960px */
+}
+
+#main aside {
+	width: 26.041366666666667%; /* 250px / 960px */
+}
+
+body#home #main aside {
+	float: right;
+}
+
+body#search #main aside {
+	float: left;
+}
+
+#content h2, aside h2 {
+	height: 60px;
+}
+
+body#search #content h2, body#search aside h2 {
+	margin-bottom: 20px;
+}
+
+#content h2 {
+	padding-left: 1.06382978723404%; /* 10px / 940px */
+}
+
+aside h2 {
+	padding-left: 4%; /* 10px / 250px */
+}
+
+/**
+ *	Featured Products
+ */
+.featured-product, .ultimate-deal, .product {
+	padding-bottom: 16px;
+	margin-top: 16px;
+}
+
+.featured-product img.main, .ultimate-deal img.main {
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.featured-product .left {
+	float: left;
+	position: relative;
+	width: 16.17647058823529%; /* 110 / 680 */
+	margin-right: 3.94117647058824%; /* 20 / 680 */
+}
+
+.flag-item {
+	position: absolute;
+	width: 91px;
+	height: 27px;
+	bottom: 0px;
+	left: -10px;
+}
+
+.featured-product .right {
+	float: left;
+	width: 79.88235294117647%; /* 550 / 680 */
+}
+
+.featured-product ul, .ultimate-deal ul {
+	float: left;
+	margin-left: 1.3em;
+	margin-top: 6px;
+}
+
+.featured-product .btns {
+	float: right;
+	width: 20%; /* 110px / 550px */	
+}
+
+.featured-product .btns a  {
+	display: block;
+	height: 36px;
+}
+
+.featured-product .btns .buy-now {
+	margin-bottom: 5px;
+}
+
+.featured-product .btns .buy-now span {
+	width: 18px;
+	height: 14px;
+	float: left;
+	margin-top: 12px;
+	margin-left: 12px;
+	margin-right: 8px;
+}
+
+.featured-product .btns .details span {
+	width: 15px;
+	height: 20px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 12px;
+	margin-right: 8px;
+}
+
+.featured-product em, .ultimate-deal em {
+	display: block;
+}
+
+.featured-product em {
+	margin-top: 12px;
+}
+
+.ultimate-deal em {
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+
+/**
+ *	Ultimate Deals
+ */
+.ultimate-deal .left {
+	float: left;
+	width: 20%; /* 50 / 250 */
+	margin-right: 7%; /* 10 / 250 */
+	position: relative;
+}
+
+.ultimate-deal .right {
+	float: right;
+	width: 73%; /* 190 / 250 */
+}
+
+.ultimate-deal .price {
+	margin: 4px 0px;
+}
+
+.ultimate-deal .btns a {
+	display: block;
+}
+
+.ultimate-deal .buy-now {
+	float: left;
+	width: 78px;
+	padding-right: 5px;
+	margin-right: 12px;
+}
+
+.ultimate-deal .buy-now span {
+	width: 18px;
+	height: 14px;
+	float: left;
+	margin-right: 5px;
+}
+
+.ultimate-deal .details {
+	float: left;
+	width: 35%;
+}
+
+.ultimate-deal .details span {
+	width: 15px;
+	height: 20px;
+	float: left;
+	margin-right: 0px;
+	margin-right: 5px;
+}
+
+.ultimate-deal ul {
+	margin-bottom: 14px;	
+}
+
+/**
+ *	Filters
+ */
+.min-all-items, .max-all-items {
+	margin-right: 10px;	
+	display: block;
+	float: right;
+	width: 19px;
+	height: 19px;
+	margin-top: 18px;
+}
+
+.toggle-min-max {
+	width: 12px;
+	height: 12px;
+	display: block;
+	float: left;
+}
+
+/**
+ *	Products
+ */ 
+#product-notes .bg-wrapper {
+	padding: 16px;
+}
+
+#product-notes p {
+	padding-bottom: 0px;	
+}
+
+.product .content {
+	float: right;
+	width: 95.58823529411765%; /* 650 / 680 */
+}
+
+.product img.main {
+	min-width: 100%;
+	max-width: 100%;
+}
+
+/* min and max*/
+.product .min .left, .product .max .left {
+	float: left;
+	position: relative;
+}
+
+.product .min .right, .product .max .right {
+	float: right;
+}
+
+/* min */
+#content .minimized-item {
+	padding-bottom: 10px;	
+}
+
+.product .min .left {
+	width: 	7.69230769230769%; /* 50 / 650 */
+}
+
+.product .min .right {
+	width: 90%; /* 585 / 650 */
+}
+
+.product .min h4 {
+	float: left;
+	width: 73.5042735042735%; /* 430 / 585 */
+	margin: 6px 0px 10px 0px;
+}
+
+.product .min h3 {
+	float: right;
+	width: 21.1965811965812%; /* 124 / 585 */
+}
+
+.product .min .right ul.specs {
+	margin-left: 0px !important;
+	float: left;
+	width: 44%;
+}
+
+.product .min .right ul li.divider {
+	padding: 0px 5px;
+}
+
+.product .min .right ul.btns {
+	float: right;
+	margin-left: 0px !important;
+	width: 54%;
+}
+
+.product .min ul.btns span {
+	float: left;
+	margin-right: 8px;
+}
+
+.product .min ul.btns li {
+	padding: 0px 10px;
+	float: right;
+}
+
+.product .min ul.btns a {
+	float: right;
+}
+
+.product .min ul.btns .buy-now span {
+	width: 18px;
+	height: 14px;
+	margin-top: 3px;
+}
+
+.product .min ul.btns .auction span {
+	width: 24px;
+	height: 18px;
+}
+
+.product .min ul.btns .make-offer span {
+	width: 21px;
+	height: 18px;
+}
+
+/* max */
+.product .max .left {
+	width: 	16.92307692307692%; /* 110 / 650 */
+}
+
+.product .max .right {
+	width: 80%; /* 520 / 650 */
+}
+
+/**
+ *	Footer
+ */
+footer {
+	padding: 0 1.04166666666667%; /* 10px / 960px */
+	height: 30px;
+	margin: 65px 1.04166666666667% 14px 1.04166666666667%; /* 10px / 960px */
+}
+
+footer #copyright {
+	float: left;
+}
+
+footer nav {
+	width: 59%;
+	float: right;
+}
+
+footer nav ul {
+	text-align: right;
+}
+
+footer nav li {
+	display: inline;
+	margin-left: 3%;
+}

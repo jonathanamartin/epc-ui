@@ -1,0 +1,11 @@
+/** 
+ *	Layout CSS Rules
+ */
+ 
+ #container {
+ 	 margin: 40px auto;
+ 	 padding: 0 1em;
+ 	 max-width: 61.75em; /* 988px / 16px = 61.75em */
+ 	 background-color: #eee;
+ 	 position: relative;
+ }

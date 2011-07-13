@@ -1,0 +1,60 @@
+/** 
+ *	Form CSS Rules
+ */
+ 
+ 
+label {
+	display: block;
+	padding-bottom: 3px;
+}
+input.text, textarea {
+	padding: 6px;
+	border: 6px solid #e1e5ea;
+	-moz-border-radius: 5px;	
+}
+textarea { overflow: auto; }
+input.button {
+	-moz-border-radius: 5px;
+	background: #3b69ac url(../images/bg_button.gif) 0px 0px repeat-x;
+	padding: 9px;
+	border: none;
+	cursor: pointer;
+}
+input.button:hover { background: #4479b8 url(../images/bg_button.gif) 0px -67px repeat-x; }
+
+/**
+ * Newsletter Form
+ */
+#newsletter #validation-indicator {
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	z-index: 1000;
+	right: 14px;
+	top: 16px;
+}
+#newsletter #validation-indicator.good { background: #f4f6f9 url(../images/icons.gif) -79px -32px repeat-x; }
+#newsletter #validation-indicator.bad { background: #f4f6f9 url(../images/icons.gif) -96px -32px repeat-x; }
+#newsletter-field-wrapper { position: relative; }
+
+/**
+ * Contact Form
+ */
+#Form_ContactForm_Name,
+#Form_ContactForm_Email,
+#Form_ContactForm_Phone,
+#Form_ContactForm_Message
+{
+	width: 360px;	
+}
+#Name, #Email, #Phone, #Message {
+	padding-bottom: 20px;	
+}
+
+/**
+ * Form Element Sizing
+ */
+#subscribe-field { 
+	width: 170px; 
+	padding-right: 30px;
+}

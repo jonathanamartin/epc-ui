@@ -1,0 +1,219 @@
+/** 
+ *	Style CSS Rules
+ */
+
+h1,
+nav.main,
+#content h2, 
+aside h2,
+.featured-product h3,
+.featured-product h4,
+.product h4,
+.featured-product .btns a,
+.ultimate-deal h5,
+.ultimate-deal .price,
+.product .min h3
+{
+	font-family: 'Open Sans', arial, serif;
+}
+
+a {
+	color: #3d97d3;	
+}
+
+a:hover, a:visited {
+	color: #265d82;	
+}
+
+h1 {
+	font-size: 1.8em;
+}
+ 
+h2 {
+	font-size: 1.6em;
+}
+
+ 
+h3 {
+ 
+}
+
+h4 {
+ 
+}
+
+h5 {
+	font-size: .92em;
+}
+
+.flag-item {
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: .7em;
+	font-weight: bold;
+	line-height: 3.7;	
+}
+
+#container {
+ 	 line-height: 1.4;
+}
+
+/**
+ * Header
+ */
+
+#login h2 {
+	text-align: right;
+	line-height: 2.1em;
+}
+
+#login a {
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 2.5em;
+}
+
+#cart {
+	font-size: 1.2em;
+	line-height: 2.7;	
+}
+
+#cart .icon, #cart .amount, #cart .items {
+	text-align: center;
+}
+
+/**
+ *	Navigation
+ */
+nav.main {
+	text-transform: uppercase;
+}
+
+nav.main li a {
+	text-align: center;
+	line-height: 3.4;
+	color: #555;
+}
+
+nav.main li a:hover {
+	line-height: 3;
+}
+
+nav.main li a.hover {
+	line-height: 3;
+}
+
+nav.main li.active a, nav.main li.active a:hover {
+	line-height: 3.8;
+	color: #fff;
+}
+
+/**
+ *	Bread Crumb and RSS
+ */
+#breadcrumb-and-rss {
+	line-height: 3.5em;
+	color: #9a9a9a;
+}
+
+#breadcrumb-and-rss li.delimeter {
+	color: #d8d8d8;
+}
+
+/**
+ *	Main
+ */
+#content h2, aside h2 {
+	color: #fff;
+	font-size: 1.8em;
+	line-height: 2.4;
+}
+
+/**
+ *	Featured Products
+ */
+.featured-product h3 {
+	font-size: 2.2em;
+	color: #525252;
+	font-weight: 600;
+}
+
+.featured-product h4 {
+	font-size: 1.7em;
+}
+
+.featured-product li, .ultimate-deal li {
+	color: #50a1d7;
+}
+
+.featured-product li span, .ultimate-deal li span {
+	color: #444;
+}
+
+.featured-product .btns a  {
+	color: #fff;
+	text-align: left;
+	font-size: 1.15em;
+	line-height: 2.3;
+}
+
+.featured-product em, .ultimate-deal em {
+	color: #f89f28;
+	font-size: .9em;
+}
+
+/**
+ *	Ultimate Deals
+ */
+.ultimate-deal h5 {
+	font-size: 1.1em;
+}
+
+.ultimate-deal .price {
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+/**
+ *	Products
+ */ 
+#product-notes .bg-wrapper {
+	color: #808080;
+}
+
+#product-notes em {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #3d3d3d;
+}
+
+/* min */
+.product .min h4 {
+	font-size: 1.2em;
+}
+
+.product .min h3 {
+	font-size: 1.6em;
+	font-weight: 600;
+	text-align: right;
+}
+
+.product .min .right ul li.divider {
+	color: #ccc;
+}
+
+.product .min .right ul.btns {
+	text-align: right;
+}
+
+/* max */
+
+/**
+ *	Footer
+ */
+footer {
+	font-size: .9em;
+	line-height: 3;	
+	color: #979797;
+}	

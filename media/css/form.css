@@ -1,0 +1,25 @@
+/** 
+ *	Form CSS Rules
+ */
+
+/**
+ *	Login Form
+ */
+#login-form input.text {
+	width: 100%;
+	background: transparent url(../img/gif/bg_input_text.gif) top left repeat-x;
+	padding: 6px;
+	border: 1px solid #cccccc;
+	margin-bottom: 10px;
+}
+
+#login-form input.button {
+	height: 42px;
+	padding: 0px 10px;
+	border: none;
+	font-size: 1.2em;
+}
+
+#login-form label {
+	color: #777;
+}

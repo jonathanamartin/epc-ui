@@ -1,0 +1,20 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+  Web Developer / Designer: Jonathan Martin
+  Site: http://www.jonathanamartin.com
+  Twitter: N/A
+  Location: Arkansas
+
+/* THANKS */
+  Name: CSS 3 Please
+  URL: http://css3please.com
+  
+  Name: HTML 5 Boilerplate
+  URL: http://html5boilerplate.com
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery, jQuery UI, CSS 3 PIE
+  Software:

@@ -1,0 +1,475 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>EPC Store</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:lightitalic,regular,regularitalic,600,bold,bolditalic,800,800italic&v1">
+	<link rel="stylesheet" type="text/css" href="./media/css/dev.styles.css?v=2">
+	
+	<script src="./media/js/libs/modernizr-1.7.min.js"></script>
+
+</head>
+<body id="search">
+	<div id="container">
+	
+<!-- sub navigations -->
+<!-- NOTE: name the sub navigation div "<nav id>-subnav" and the corresponding button "<nav id>-btn" -->
+
+	<div class="subnav rounded-bot" id="desktops-subnav" style="display: none;">
+		<ul>
+			<li><a href="#" title="">PC</a></li>
+			<li><a href="#" title="">Mac</a></li>
+		</ul>
+	</div>
+	
+	<div class="subnav rounded-bot" id="notebooks-subnav" style="display: none;">
+		<ul>
+			<li><a href="#" title="">PC</a></li>
+			<li><a href="#" title="">Mac</a></li>
+			<li><a href="#" title="">Tablets</a></li>
+		</ul>
+	</div>
+	
+	<div class="subnav rounded-bot" id="servers-subnav" style="display: none;">
+		<ul>
+			<li><a href="#" title="">Tower</a></li>
+			<li><a href="#" title="">Rack Mountable</a></li>
+		</ul>
+	</div>
+	
+	<div class="subnav rounded-bot" id="lcds-subnav" style="display: none;">
+		<ul>
+			<li><a href="#" title="">15"</a></li>
+			<li><a href="#" title="">17"</a></li>
+			<li><a href="#" title="">19"</a></li>
+			<li><a href="#" title="">21"</a></li>
+			<li><a href="#" title="">24" or bigger</a></li>
+		</ul>
+	</div>
+	
+	<div class="subnav rounded-bot" id="printers-subnav" style="display: none;">
+		<ul>
+			<li><a href="#" title="">Laser</a></li>
+			<li><a href="#" title="">Inkjet</a></li>
+			<li><a href="#" title="">Impact / Dot Matrix</a></li>
+			<li><a href="#" title="">Label Printers</a></li>
+			<li><a href="#" title="">Plotter</a></li>
+		</ul>
+	</div>
+	<div class="subnav rounded-bot" id="printers-subnav" style="display: none;">
+		<ul>
+			<li><a href="#" title="">Laser</a></li>
+			<li><a href="#" title="">Inkjet</a></li>
+			<li><a href="#" title="">Impact / Dot Matrix</a></li>
+			<li><a href="#" title="">Label Printers</a></li>
+			<li><a href="#" title="">Plotter</a></li>
+		</ul>
+	</div>
+
+	<div class="subnav rounded-bot" id="gadgets-subnav" style="display: none;">
+		<ul>
+			<li><a href="#" title="">Phones</a></li>
+			<li><a href="#" title="">PDAs / Tablets</a></li>
+			<li><a href="#" title="">iPods</a></li>
+			<li><a href="#" title="">Netbooks</a></li>
+		</ul>
+	</div>
+	
+<!--  incomplete
+	<div class="subnav rounded-bot" id="parts-subnav" style="display: none;">
+		<ul>
+			<li><a href="#" title=""></a></li>
+		</ul>
+	</div>
+ -->
+
+<!-- header -->	
+		<header class="clearfix">
+			<a href="logo" id="logo" title="Home">&nbsp;</a>
+			
+			<div class="right clearfix">
+
+<!-- shopping cart -->	
+				<a href="#" title="Your Shopping Cart" id="cart" class="clearfix rounded shadow lift-shadow">
+					<span class="icon">&nbsp;</span>
+					<span class="amount">$298.95</span>
+					<span class="items">( 3 items )</span>
+					
+					<span class="lft-shadow">&nbsp;</span><span class="rt-shadow">&nbsp;</span>
+				</a>
+
+<!-- login button -->	
+				<div id="login" class="clearfix">
+					<a href="#" title="Logout" class="rounded shadow clearfix" id="login-btn"><span>&nbsp;</span>Logout</a>
+					<h2><span>Welcome,</span> Brent</h2>
+				</div>
+			</div>
+    	</header>
+    	
+<!-- main navigation -->
+<!-- NOTE: name the sub navigation div "<nav id>-subnav" and the corresponding button "<nav id>-btn" -->
+    	<nav class="main">
+			<ul class="rounded-top clearfix">
+				<!-- psuedo selector exist to select n child but not supported in IE.  Using class "first/last" instead -->
+				<li class="first">
+					<a href="#" title="Home" id="home-btn">
+						Home
+					</a>
+				</li>
+				<li class="active">
+					<a href="#" title="Desktops" id="desktops-btn">
+						Desktops
+						<img src="media/img/png/nav_btn_down_arrow.png" alt="Desktops" />
+					</a>
+				</li>
+				<li>
+					<a href="#" title="Notebooks" id="notebooks-btn">
+						Notebooks
+						<img src="media/img/png/nav_btn_down_arrow.png" alt="Desktops" />
+					</a>
+				</li>
+				<li>
+					<a href="#" title="Servers" id="servers-btn">
+						Servers
+						<img src="media/img/png/nav_btn_down_arrow.png" alt="Desktops" />
+					</a>
+				</li>
+				<li>
+					<a href="#" title="LCDs" id="lcds-btn">
+						LCDs
+						<img src="media/img/png/nav_btn_down_arrow.png" alt="Desktops" />
+					</a>
+				</li>
+				<li>
+					<a href="#" title="Printers" id="printers-btn">
+						Printers
+						<img src="media/img/png/nav_btn_down_arrow.png" alt="Desktops" />
+					</a>
+				</li>
+				<li>
+					<a href="#" title="Gadgets" id="gadgets-btn">
+						Gadgets
+						<img src="media/img/png/nav_btn_down_arrow.png" alt="Desktops" />
+					</a>
+				</li>
+				<li>
+					<a href="#" title="Parts" id="parts-btn">
+						Parts
+						<img src="media/img/png/nav_btn_down_arrow.png" alt="Desktops" />
+					</a>
+				</li>
+				<li class="last auctions">
+					<a href="#" title="Auctions" class="last" id="auctions-btn">
+						Auctions
+						<img src="media/img/png/nav_btn_down_arrow.png" alt="Desktops" />
+					</a>
+				</li>
+			</ul> 	
+    	</nav>
+
+<!-- bread crumb / rss -->
+		<div id="breadcrumb-and-rss" class="rounded-top clearfix">
+			<ul>
+				<li><a href="#" title="">Home</a></li>
+				<li class="delimeter"> / </li>
+				<li>Desktop Computers</li>
+			</ul>
+			<a href="#" title="RSS" id="rss-icon">&nbsp;</a>			
+		</div>
+
+		<div id="main" role="main" class="clearfix">
+
+<!-- main content -->
+			<div id="content">
+				
+				<h2 class="rounded shadow lift-shadow clearfix">
+					Desktop Computers
+					<a href="#" class="max-all-items" id="max-all-products">&nbsp;</a>
+					<a href="#" class="min-all-items active" id="min-all-products">&nbsp;</a>	
+									
+					<span class="lft-shadow">&nbsp;</span><span class="rt-shadow">&nbsp;</span>
+				</h2>
+				
+				<div id="product-notes" class="rounded">
+					<div class="bg-wrapper rounded" >
+						<em>Notes</em>
+						<p>
+							The prices below include the preinstallation and activation of a valid operating system 
+							license, with the accompanying Certificate of Authenticity sticker where appropriate.
+						</p>
+					</div>
+				</div>
+				
+<!-- product 1 -->
+				<div class="product clearfix">
+					
+					<a href="#" class="toggle-min-max">&nbsp;</a>
+					
+					<div class="content">
+	
+	<!-- min -->						
+						<div class="min">
+							<div class="left">
+								<div class="flag-item">Free Shipping</div>
+								<a href="#" alt="Product description here...">
+									<img src="media/img/jpg/products/p2_med.jpg" alt="Product 1" class="main" />
+								</a>
+							</div><!-- /.left -->
+							<div class="right clearfix">
+								<div class="clearfix">
+									<h4>
+										<a href="#" title="Product title here...">
+											Acer VL480G-UD8401W Ultra-Compact Desktop Computer (Black)
+										</a>
+									</h4>
+									<h3>$100,684.00</h3>
+								</div>
+								
+								<div class="clearfix">
+									<ul class="specs">
+										<li>1.7GHZ</li>
+										<li class="divider">/</li>
+										<li>20 GB</li>
+										<li class="divider">/</li>
+										<li>512 MB</li>
+										<li class="divider">/</li>
+										<li>CD-ROM</li>
+									</ul>
+									
+									<ul class="btns" class="clearfix">
+										<li class="make-offer"><a href="#" title="Make Offer"><span>&nbsp;</span>Make Offer</a></li>
+										<li class="auction"><a href="#" title="Auction"><span>&nbsp;</span>Auction</a></li>
+										<li class="buy-now"><a href="#" title="Buy Now"><span>&nbsp;</span>Buy Now</a></li>
+									</ul>
+								</div>
+							</div><!-- /.right -->
+						</div><!-- /.min -->
+	
+	<!-- max -->
+						<div class="max" style="display: none;">
+							<div class="left">
+								<div class="flag-item black-flag">Out of Stock</div>
+								<a href="#" alt="Product description here...">
+									<img src="media/img/jpg/products/p2_med.jpg" alt="Product 1" class="main" />
+								</a>
+							</div>
+							<div class="right clearfix">
+								<h4>
+									<a href="#" title="Product title here...">
+										Acer VL480G-UD8401W Ultra-Compact Desktop Computer (Black)
+									</a>
+								</h4>
+								<h3>$684.00</h3>
+								
+								<ul>
+									<li><span>Intel Dual-Core E8400 processor</span></li>
+									<li><span>4GB memory; 500GB hard drive</span></li>
+									<li><span>DVD+/-R/RW Writer</span></li>
+									<li><span>Windows 7 Professional </span></li>
+								</ul>
+								
+								<div class="btns">
+									<a href="#" title="Buy Now" class="buy-now rounded shadow clearfix"><span>&nbsp;</span>Buy Now</a>
+									<a href="#" title="Details" class="details rounded shadow clearfix"><span>&nbsp;</span>Details</a>
+								</div>
+							</div><!-- /.right -->
+						</div><!-- /.max -->
+						
+						
+					</div><!-- /.content -->
+				</div><!-- /.product -->
+				
+<!-- product 1 -->
+				<div class="product clearfix">
+					
+					<a href="#" class="toggle-min-max">&nbsp;</a>
+					
+					<div class="content">
+						<div class="min" style="display: none;">
+							here is the min div<br />
+							here is the min div<br />
+							here is the min div<br />
+							here is the min div<br />
+							<br />
+						</div>
+						
+						<div class="max">
+							here is the max div<br />
+							here is the max div<br />
+							here is the max div<br />
+							here is the max div<br />
+							here is the max div<br />
+							here is the max div<br />
+							here is the max div<br />
+							here is the max div<br />
+							here is the max div<br />
+							here is the max div<br />
+							here is the max div<br />
+						</div>
+					</div><!-- /.content -->
+				</div><!-- /.product -->
+				
+				<div class="featured-product clearfix">
+					<div class="left">
+						<a href="#" alt="Product description here...">
+							<img src="media/img/jpg/products/p1_med.jpg" alt="Product 1" class="main" />
+						</a>
+					</div>
+					<div class="right clearfix">
+						<h4>
+							<a href="#" title="Product title here...">
+								Acer Veriton PS.VAL03.053 Desktop Computer (Black)
+							</a>
+						</h4>
+						<h3>$399.89</h3>
+						
+						<ul>
+							<li><span>Intel Pentium Dual-Core E6700 processor</span></li>
+							<li><span>2GB memory; 320GB hard drive</span></li>
+							<li><span>DVD+/-R/RW Writer</span></li>
+							<li><span>Windows 7 Professional</span></li>
+						</ul>
+						
+						<div class="btns">
+							<a href="#" title="Buy Now" class="buy-now rounded shadow clearfix"><span>&nbsp;</span>Buy Now</a>
+							<a href="#" title="Details" class="details rounded shadow clearfix"><span>&nbsp;</span>Details</a>
+						</div>
+					</div>
+				</div><!-- /.featured-product -->
+				
+			</div><!-- /#content -->
+			
+<!-- side -->
+			<aside>
+				<h2 class="rounded shadow lift-shadow">
+					Filter
+					<a href="#" class="max-all-items" id="max-all-filters">&nbsp;</a>
+					<a href="#" class="min-all-items active" id="min-all-filters">&nbsp;</a>	
+					
+					<span class="lft-shadow">&nbsp;</span><span class="rt-shadow">&nbsp;</span>
+				</h2>
+<!-- filters -->					
+				
+<!-- filter 1 -->					
+				<div class="filter clearfix">
+					<a href="#" class="toggle-min-max">&nbsp;</a>
+					
+					<div class="content" style="float: right; width: 90%;">
+						<div class="min" style="display: none;">
+							minmized filter<br />
+							minmized filter<br />
+							<br />
+						</div>
+						
+						<div class="max">
+							here is the max filter<br />
+							here is the max filter<br />
+							here is the max filter<br />
+							here is the max filter<br />
+							here is the max filter<br />
+							here is the max filter<br />
+							here is the max filter<br />
+						</div>
+					</div>
+				</div><!-- /.filter -->
+				
+				<br />
+				<br />
+				<div class="filter clearfix">
+					
+					<a href="#" class="toggle-min-max">&nbsp;</a>
+					
+					<div class="content" style="float: right; width: 90%;">
+						<div class="min" style="display: block;">
+							minmized filter<br />
+							minmized filter<br />
+							<br />
+						</div>
+						
+						<div class="max" style="display: none;">
+							here is the max filter<br />
+							here is the max filter<br />
+							here is the max filter<br />
+							here is the max filter<br />
+							here is the max filter<br />
+							here is the max filter<br />
+							here is the max filter<br />
+						</div>
+					</div>
+				</div><!-- /.filter -->
+		
+			</aside>
+		</div><!-- /#main -->
+		
+<!-- footer -->
+		<footer class="rounded-top clearfix">
+			<div id="copyright">Copyright &copy; 2011 EPC, Inc.  All rights reserved.</div>
+			<nav>
+				<ul class="clearfix">
+					<li><a href="#" title="RSS">RSS</a></li>
+					<li><a href="#" title="Site Map">Site Map</a></li>
+					<li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+					<li><a href="#" title="Terms of Use">Terms of Use</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div><!-- /#container -->
+	
+<!-- login form -->
+	<div id="login-form" class="clearfix" style="display: none;">
+		<form action="#" method="post">
+			<h2>Login</h2>
+			<label for="username">Username</label><br />
+			<input type="text" class="text rounded" tabindex="1" maxlength="32" /><br />
+			
+			<label for="password">Password</label><br />
+			<input type="password" class="text rounded" tabindex="2" maxlength="32" /><br />
+
+			<input type="submit" value="Login" class="button rounded shadow" tabindex="3" />
+		</form>
+		
+		<div class="right">
+			<h2>Register</h2>
+			<p>
+				Register today to gain access to great deals, auctions, and more!
+			</p>
+			<a href="#" title="Register Now">Register Now</a>
+		</div>
+		
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+ 	<script>window.jQuery || document.write("<script src='./media/js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+	<script src="./media/js/libs/jquery-ui.min.js"></script>
+
+	<!-- scripts concatenated and minified via ant build script-->
+	<script src="./media/js/plugins.js"></script>
+	<script src="./media/js/script.js"></script>
+	<!-- end scripts-->
+
+	<!--[if lt IE 7 ]>
+		<script src="./media/js/libs/dd_belatedpng.js"></script>
+		<script>DD_belatedPNG.fix("img, .png_bg");</script>
+	<![endif]-->
+	
+	<script>
+		/*
+		var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID 
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+		g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+		s.parentNode.insertBefore(g,s)}(document,"script"));
+		*/
+	</script>
+</body>
+</html>
